@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>덕생고</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<meta property="og:title" content="덕생고(DUCK生苦)" />
+	<meta property="og:description" content="평범한 오리의 험난한 일생" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://eunjung113.github.io/eunjung-duck-final/" />
+	<meta property="og:image" content="thumbnail.jpg" />
+
+	<style type="text/css">
+		.wrap{margin: auto; width: 1200px;}
+		section{position: relative;}
+		.section0{position: relative; z-index: 910; background: white; height: 760px;}
+		.section1{position: relative; background-size: 1200px; background: url(1.png); height: 1405px; z-index: 10; top: -30px;}
+		.section2{position: relative; background-size: 1200px; background: url(2.png); height: 1330px; z-index: 30; top: -140px;}
+		.section3{position: relative; background-size: 1200px; background: url(3.png); height: 1372px; z-index: 20; top: -260px;}
+		.section4{position: relative; background-size: 1200px; background: url(4.png); height: 1783px; z-index: 50; top: -585px;}
+		.section5{position: relative; background-size: 1200px; background: url(5.png); height: 2281px; z-index: 40; top: -780px;}
+		.section6{position: relative; background-size: 1200px; background: url(6.png); height: 1800px; z-index: 60; top: -1330px;}
+		.section7{position: relative; background-size: 1200px; background: url(7.png); height: 1260px; z-index: 70; top: -1500px;}
+		.section8{position: relative; background-size: 1200px; background: url(8.png); height: 1275px; z-index: 80; top: -1530px;}
+		.section9{position: relative; background-size: 1200px; background: url(9.png); height: 1435px; z-index: 10; top: -1560px;}
+		.section10{position: relative; background-size: 1200px; height: 500px; top: -1230px; z-index: 990;}
+		.section11{position: relative; background: white; background-size: 1200px; z-index: 999; height: 500px; top: -1130px; text-align: center;}
+
+		.title{width: 100px; margin-top: 200px; margin-left: 360px; margin-bottom: 0px; padding: 0; z-index: 909;}
+		.box{width: 1200px; height: 80px; margin-top: -50px;}
+		.duck{width: 454px; display: block; z-index: 900; left:calc(50% - 227px); top: 30%;}
+
+		h1{font-family: 'Noto Serif KR', serif;}
+		h3, h6{font-family: 'Noto Serif KR', serif;}
+		h4{font-size: 30px; text-align: left; line-height: 2.0; font-family: 'Noto Serif KR', serif; z-index: 5; position: absolute; background: white; border-radius: 6px; padding-left: 20px; padding-top: 9px; padding-bottom: 15px; font-size: 27px; padding-right: 20px; z-index: 1000}
+		h5{text-align: center; font-weight: bolder; font-size: 100px;}
+		p{text-align: center; font-family: 'Noto Serif KR', serif;}
+		footer{font-size: 20px; font-family: 'Noto Serif KR', serif;}
+
+		.TT{font-size: 70px; text-align: left; margin-top: 0px; margin-left: 150px;}
+		.WR{font-size: 30px; text-align: right; margin-right: 150px;}
+		.end{font-size: 70px; text-align: center; color: white; animation: Ia infinite alternate 0.07s;}
+		@keyframes Ia{from{transform: rotate(-3deg);}to{transform: rotate(3deg);}}
+		.a11{font-size: 50px;}
+		.b11{font-size: 20px; line-height: 2.0;}
+
+		.s1-2{width: 500px; position: absolute; left: 5%; top: 55%; animation: Aa 2s infinite linear alternate;}
+		@keyframes Aa{to{transform: rotate(15deg);}}
+		.s1-3{position: absolute; width: 500px; left: 50%; top: 10%; animation: Ab 3s infinite linear alternate;}
+		@keyframes Ab{to{transform: rotate(-20deg);}}
+		.s1-1{position: absolute; margin: auto;}
+		.s1-0{position: absolute; width: 500px; height: 210px; left: 59%; top: 64%;}
+		.sp1{left: 64%; top: 35%; }
+
+		.s2-1{position: absolute; width: 600px; top: 50%; left: 8%; animation: Ba 1.5s infinite linear alternate;}
+		@keyframes Ba{to{transform: rotate(20deg); left: 0%;}}
+		.s2-2{position: absolute; width: 1000px; top: 10%; left: 20%; animation: Bb 1.2s infinite linear alternate;}
+		@keyframes Bb{to{left: 10%; top: 30%;}}
+		.s2-0{position: absolute; width: 530px; height: 210px; top: 15%}
+		.sp2{left: 3%; top: 43%; }
+
+		.s3-1{position: absolute; z-index: 29;}
+		.s3-2{position: absolute; width: 300px; top: 30%; left: 8%; z-index: 28; animation: Ca infinite linear alternate 1.8s;}
+		@keyframes Ca{to{width: 250px; top: 35%; left: 10%;}}
+		.s3-3{position: absolute; width: 400px; top: 40%; left: 58%; z-index: 27; animation: Cb infinite linear 3s;}
+		@keyframes Cb{to{transform: rotate(360deg);}}
+		.s3-4{position: absolute; z-index: 990; width: 100px; left: 48%; top: 4000px;}
+		.s3-0{position: absolute; width: 555px; height: 210px; left: 55%; top: 15%;}
+		.sp3{left: 57%; top: 20%;}
+
+		.s4-1{position: absolute; width: 800px; left: 55%; top:41%; animation: Da infinite linear alternate 1s}
+		@keyframes Da{to{transform: rotate3d(1, 0, 0, 20deg); left: 53%;}}
+		.s4-2{position: absolute; width: 900px; left: -20%; top: 15%; animation: Db infinite linear alternate 2s}
+		@keyframes Db{to{left: 5%; top: 20%;}}
+		.s4-3{position: absolute; z-index: 990; width: 250px; left: 43%; top: 4980px;}
+		.s4-0{position: absolute; width: 590px; height: 210px; top: 70%}
+		.sp4{left: 3%; top: 63%;}
+
+		.s5-1{position: absolute; top: 35%; width: 500px; animation: Ea infinite linear 3s}
+		@keyframes Ea{to{transform: rotate3d(0, 1, 0, 720deg);}}
+		.s5-2{position: absolute; top: 50%; animation: Eb infinite linear alternate 2s}
+		@keyframes Eb{to{transform: rotate(-30deg);}}
+		.s5-3{position: absolute; z-index: 990; width: 300px; left: 41%; top: 6700px;}
+		.s5-0{position: absolute; width: 590px; height: 250px; top: 61.5%; left: 52%;}
+		.sp5{left: 55%; top: 58%;}
+
+		.s6-1{position: absolute; width: 1200px; top: 5%; z-index: 66;}
+		.s6-2{position: absolute; left: -10%; top: 1%; width: 600px; animation: Fa infinite alternate 2s}
+		@keyframes Fa{to{transform: rotate(-50deg); width: 1000px;}}
+		.s6-3{position: absolute; z-index: 65; width: 500px; left: 50%; top: 65%; animation: Fb infinite alternate 1s}
+		@keyframes Fb{to{transform: rotate(-150deg); width: 600px; left: 55%;}}
+		.s6-4{position: absolute; z-index: 990; width: 500px; left: 37%; top: 8450px;}
+		.s6-0{position: absolute; width: 590px; height: 250px; top: 68%; z-index: 68;}
+		.sp6{top: 30%; z-index: 69; left: 55%;}
+
+		.s7-1{position: absolute; z-index: 75;}
+		.s7-2{position: absolute; z-index: 71; animation: Ga infinite linear alternate 1s}
+		@keyframes Ga{to{opacity: 0.1;}}
+		.s7-3{position: absolute; z-index: 76; left: 3%; animation: Gb infinite linear alternate 3s}
+		@keyframes Gb{to{transform: rotate3d(0, -1, 0, 30deg); left: -6%;}}
+		.s7-4{position: absolute; z-index: 990; left: 18%; width: 1000px; top: 9370px;}
+		.s7-0{position: absolute; width: 630px; height: 250px; left: 48%; z-index: 78; top: 5%;}
+		.sp7{z-index: 79; left: 55%; top: 20%;}
+
+		.s8-1{position: absolute; top: 0; left: -30px; height: 1275px; animation: Ha infinite linear alternate 0.8s}
+		@keyframes Ha{to{height: 1400px; top: -125px; left: -125px;}}
+		.s8-2{position: absolute; width: 1200px; height: 1275px; top: 0; animation: Hb infinite linear alternate 1s}
+		@keyframes Hb{to{height: 1600px; top: -325px;}}
+		.s8-0{position: absolute; width: 630px; height: 250px; left: 51%; z-index: 88; top: 3%;}
+		.sp8{z-index: 89; left: 55%; top: 15%;}
+
+		.s9-0{position: absolute;width: 630px; height: 250px; z-index: 18; top: 76%;}
+		.sp9{z-index: 19; left: 53%; top: 10%;}
+
+		.footer-l{float: left; margin-right: 0; padding-right: 0; font-size: 50px; text-align: left; font-weight: bolder; margin-left: 100px; margin-bottom: 100px;}
+		.footer-l-1{font-size: 20px; color: rgba(0, 0, 0, 0.5);}
+		.footer-r{float: right; margin-left: 0; padding-left: 0; text-align: left; font-size: 15px; margin-right: 30px; margin-bottom: 0px; margin-top: 100px; font-weight: bolder; color: rgba(0, 0, 0, 0.8);}
+
+	</style>
+
+</head>
+<body>
+	<div class="wrap">
+		<section class="section0">
+			<img src="DUCK.png" class="title">
+			<h1 class="TT">덕생고(덕生苦)</h1>
+			<br>
+			<h3 class="WR">글/디자인　이은정</h3>
+			<br>
+		</section>
+
+		<img src="DUCK.png" class="duck" style="position:fixed;">
+
+		<section class="section1">
+			<img src="1-2.png" class="s1-2">
+			<img src="1-3.png" class="s1-3">
+			<img src="1-1.png" class="s1-1">
+			<h4 class="sp1">어느 산골 평범한 마을의 오리<br>농장에는 평범한 오리들이 평범한<br>일상을 보내며 살고 있었어요.</h4>
+		</section>
+
+		<section class="section2">
+			<img src="2-1.png" class="s2-1">
+			<img src="2-2.png" class="s2-2">
+			<h4 class="sp2">평범한 오리는 오리 학교에서 공부를<br>하고 수능을 쳐서 성적에 맞춰<br>대학을 가고 졸업을 했어요.</h4>
+		</section>
+
+		<section class="section3">
+			<img src="3-1.png" class="s3-1">
+			<img src="3-2.png" class="s3-2">
+			<img src="3-3.png" class="s3-3">
+			<h4 class="sp3">평범한 오리는 졸업을 하고 취업을 하기<br>위해 여러 군데 이력서를 넣었지만<br>취업난으로 인해 쉽지 않았어요.</h4>
+		</section>
+			<img src="3-4.png" class="s3-4">
+
+		<section class="section4">
+			<img src="4-1.png" class="s4-1">
+			<img src="4-2.png" class="s4-2">
+			<h4 class="sp4">평범한 오리는 결국 전공과는 전혀 다른<br>일을 하게 돼요. 하지만 상관없었어요.<br>어차피 평범한 오리는 꿈이 없었으니까요.</h4>		
+		</section>
+			<img src="4-3.png" class="s4-3">
+
+		<section class="section5">
+			<img src="5-1.png" class="s5-1">
+			<img src="5-2.png" class="s5-2">
+			<h4 class="sp5">열심히 일한 평범한 오리는 많은 돈을<br>벌게 돼요. 하지만 여전히 평범한 오리의<br>삶은 평범했어요. 그래서 손대지 말아야<br>할 유흥에 이끌리고 말아요.</h4>
+		</section>
+			<img src="5-3.png" class="s5-3">
+
+		<section class="section6">
+			<img src="6-1.png" class="s6-1">
+			<img src="6-2.png" class="s6-2">
+			<img src="6-3.png" class="s6-3">
+			<h4 class="sp6">도박은 평범한 오리에게 짜릿한 기분을<br>주었어요. 그렇게 도박에 중독되고, 모든<br>재산을 탕진하고 말아요. 그리고 평범한<br>오리는 더이상 평범하지는 않게 되었죠.</h4>
+		</section>
+			<img src="6-4.png" class="s6-4">
+
+		<section class="section7">
+			<img src="7-1.png" class="s7-1">
+			<img src="7-2.png" class="s7-2">
+			<img src="7-3.png" class="s7-3">
+			<h4 class="sp7">평범하지 않은 오리는 도박빚을 갚기 위해<br>불법적인 방법으로 돈을 구했고, 감옥을<br>가게 되어요. 평범하지 않은 오리는 이것이<br>자신이 바라던 것인가 고민해요.</h4>
+		</section>
+			<img src="7-4.png" class="s7-4">
+
+		<section class="section8">
+			<img src="8-1.png" class="s8-1">
+			<img src="8-2.png" class="s8-2">
+			<h4 class="sp8">평범하지 않은 오리는 출소한 후에 자신의<br>고향으로 돌아가요. 평범하지 않은<br>오리는 예전과 같은 삶을 살면서 예전과<br>같이 평범해져 가고 있었어요.</h4>
+		</section>
+
+		<section class="section9">
+			<h4 class="sp9">하지만 평범해지는 오리는 예전과 같은<br>평범한 오리이지는 않을 거예요. 평범해지는<br>오리는 그만의 삶을 살아갈 거니까요.<br>평범하지만 다른 삶을 살아갈 거니까요.</h4>
+		</section>
+
+		<section class="section10">
+			<h1 class="end">-끝-</h1>
+		</section>	
+
+		<section class="section11">
+			<h3 class="a11"><br>작가의 말</h3>
+			<h6 class="b11">현대 사회는 '이상적인 사회인', '일반인'의 틀을 만들어 놓고 그 틀에 맞지 않는 사람을 틀렸다고 말합니다.<br>남들과 다르게 행동하는 것을 무서워하고 남들과 같은 생각을 하면서 자신의 주체는 잃은 채로 살아가게 만들고 있죠.<br>현대인들은 이러한 삶에 안정감을 느끼면서도 동시에 무력감을 느낍니다.<br>도전하지 않는다고 해서 겁쟁이라고 비난하지는 않습니다.<br>여러분이라는 존재가 이 세상에서 유일하다는 것만으로도, 여러분은 평범하되 평범하지 않은 삶을 살고 있습니다.</h6>
+		</section>
+
+
+	</div>
+  <footer class="footer">
+    <div>
+      <div class="footer-l">
+        <p>덕생고<br>(DUCK生苦)</p>
+        <p class="footer-l-1">이 세상의 모든 평범한 사람들을 위한 이야기</p>
+      </div>
+      <div class="footer-r">
+        <p>(17579)경기도 안성시 중앙로 327 국립한경대학교 제3공학관 6,7층</p>
+        <p>limeorange113@gmail.com</p>
+        <p>copyright©2019 HKNU DESIGN eun-jung Lee. all rights reserved.</p>
+      </div>
+    </div>
+  </footer>	
+
+</body>
+</html>
